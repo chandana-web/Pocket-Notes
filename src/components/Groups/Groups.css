@@ -1,0 +1,161 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 25%; /* adjust based on design */
+  background: #fff;
+  border-right: 1px solid #ddd;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Sticky Header */
+.sidebar-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  z-index: 10;
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Scrollable group list */
+.group-list {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1rem;
+}
+
+.group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  background: #f9f9f9;
+  transition: background 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.group-item:hover {
+  background: #eee;
+}
+.group-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ed-btn{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  gap: 5px;
+  
+}
+
+.ed-btn button{
+  margin-top: 1rem;
+  width: 60px;
+  background: #001F8B;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.ed-btn button:hover {
+  background: #001ec8;
+}
+
+.menu{
+  
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+}
+
+.menu img{
+  width: 15px;
+  height: 20px;
+}
+
+
+
+/* Sticky Add button at bottom */
+.add-btn {
+  position: sticky;
+  bottom: 20px;
+  left: 80%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #001F8B;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  transition: 0.2s ease;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+  transform: translateX(-50%) scale(1.05);
+}
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .sidebar.hide {
+    display: none;
+  }
+
+  .add-btn {
+    left: 85%;
+  }
+}
+
+
+

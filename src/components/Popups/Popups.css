@@ -1,0 +1,127 @@
+/* Dim background */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup box */
+.popup-box {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  animation: popIn 0.2s ease-in;
+ 
+  
+ 
+}
+
+.group-name{
+    display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  
+  
+}
+
+.group-color{
+    display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.popup-box h2 {
+  margin-top: 0;
+  
+
+}
+
+.popup-box label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Input field */
+.popup-box input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+  
+}
+
+/* Color options */
+.color-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+  width: 60%;
+}
+
+.color-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.2s ease;
+}
+
+.color-circle:hover {
+  transform: scale(1.1);
+}
+
+/* Create button */
+/* Button aligned to right */
+.btn-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+.create-btn {
+  margin-top: 1rem;
+  width: 35%;
+  background: #001F8B;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+ 
+}
+
+.create-btn:hover {
+  background: #001ec8;
+}
+
+

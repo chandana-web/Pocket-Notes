@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Groups from './components/Groups/Groups';
+import NoteSection from './components/NoteSection/NoteSection';
+import Popups from './components/Popups/Popups';
+import Welcome from './components/Welcome/Welcome';
+import { useNotes } from './context/NotesContext';
 
 function App() {
+  
+  const {activeGroup, showPopup, isMobile}=useNotes()
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Groups/>
+      
+      {activeGroup ? <NoteSection/>
+      :<Welcome isMobile={isMobile}/>}                     
+      
+      {showPopup && <Popups/> }  
+
     </div>
   );
 }
