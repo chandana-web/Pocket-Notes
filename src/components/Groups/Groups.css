@@ -59,19 +59,19 @@
   align-items: center;
   gap: 10px;
 }
-.groupName{
+/* .groupName{
   display: block;
   width: 100%;
-}
+} */
 
 
 .avatar {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   
   color: white;
-  font-weight: bold;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,10 +161,7 @@
   .add-btn {
     left: 85%;
   }
-  .groupName{
-  display: block;
-  width: 100%;
-}
+
 }
 
 
