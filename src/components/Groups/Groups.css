@@ -39,6 +39,9 @@
   align-items: center;
   gap: 10px;
   padding: 10px;
+  word-break: break-word;       
+  overflow-wrap: anywhere;       
+  white-space: normal;  
   border-radius: 10px;
   margin-bottom: 8px;
   cursor: pointer;
@@ -56,7 +59,10 @@
   align-items: center;
   gap: 10px;
 }
-
+.groupName{
+  display: block;
+  width: 100%;
+}
 
 
 .avatar {
@@ -142,7 +148,7 @@
 @media (max-width: 768px) {
   .sidebar {
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
@@ -155,6 +161,10 @@
   .add-btn {
     left: 85%;
   }
+  .groupName{
+  display: block;
+  width: 100%;
+}
 }
 
 

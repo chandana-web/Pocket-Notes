@@ -124,4 +124,48 @@
   background: #001ec8;
 }
 
+@media (max-width: 768px) {
+  .popup-box {
+    width: 80%;          /* Make popup take most of screen width */
+    padding: 1rem;       /* Reduce padding for smaller screens */
+  }
 
+  .popup-box input {
+    width: 100%;         /* Full-width input on small screens */
+  }
+
+  .color-options {
+    width: 100%;         /* Stretch color options */
+    justify-content: space-between;
+  }
+  .btn-row{
+    justify-content: center;
+  }
+
+  
+  .group-name input{
+
+  width: 60%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+  }
+
+  .color-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+  width: 60%;
+}
+.color-circle {
+  width: 25px;
+  height: 25px;
+}
+
+  .create-btn {
+    width: 50%;         /* Make button full width for mobile look */
+  }
+}

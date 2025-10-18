@@ -58,7 +58,7 @@ const Groups = () => {
       (g)=>g.name.toLowerCase()===newGroupName.toLowerCase()
            && g.id!==editingGroup.id))
       {
-        return alert("Group already exixsts!");
+        return alert("Group already exists!");
       }
 
       const words = newGroupName.trim().split(" ");
@@ -107,7 +107,7 @@ const Groups = () => {
               <div className='avatar' style={{ backgroundColor: group.color }}>
               {group.initials}
               </div>
-              <div>{group.name}</div>
+              <div className='groupName'>{group.name}</div>
             </div>
             
             <div className='menu'>

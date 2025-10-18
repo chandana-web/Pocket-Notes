@@ -56,14 +56,14 @@ const Popups = () => {
   return (
     <div className="popup-overlay" onClick={()=>setShowPopup(false)} >
       <div className="popup-box" ref={popupRef} onClick={(e)=>e.stopPropagation()} >            {/*To prevent bubbling up to parent element or capturing to child elements*/}
-        <h2>Create New group</h2>
+        <h2>Create New Notes</h2>
 
         <div className='group-name'>
-        <label>Group Name</label>
+        <label>Title Name</label>
         <input
           type="text"
           value={groupName}
-          placeholder="Enter group name"
+          placeholder="Enter Title Name"
           onChange={(e)=>setGroupName(e.target.value)} //to capture given data to "groupName"
         />
         </div>
