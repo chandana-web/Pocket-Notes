@@ -13,6 +13,6 @@ Features:
  -> Global state handled with Context API.
 
  🚀 Live Demo
-🔗 Pocket Notes App: https://pocket-notes.vercel.app)](https://pocket-notes-mu-eight.vercel.app/
+🔗 Pocket Notes App: https://pocket-notes-mu-eight.vercel.app/
 
  
